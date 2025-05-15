@@ -1,0 +1,39 @@
+@use "../utilities//variables" as vars;
+
+.races-container {
+    margin-bottom: 20px;
+  }
+  
+  .race-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    
+    label {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 12px;
+      
+      input {
+        width: 80px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+    
+    .remove-race {
+      padding: 6px 10px;
+      background-color: vars.$secondary-color;
+      color: vars.$white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: darken(vars.$secondary-color, 10%);
+      }
+    }
+  }

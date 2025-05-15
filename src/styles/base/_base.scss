@@ -1,0 +1,35 @@
+@use "../utilities/variables" as vars;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: vars.$light-gray;
+    color: vars.$dark-gray;
+    padding: 20px;
+}
+  
+header {
+    background-color: vars.$primary-color;
+    color: vars.$white;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+  
+main {
+    padding: 20px;
+}
+  
+footer {
+    padding-bottom: 20px;
+}

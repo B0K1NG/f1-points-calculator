@@ -1,54 +1,80 @@
-# React + TypeScript + Vite
+# F1 Points Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for calculating Formula 1 championship points based on race positions.
 
-Currently, two official plugins are available:
+![F1 Points Calculator](/src/assets/preview-1.png)
+![F1 Points Calculator](/src/assets/preview-2.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Calculate total championship points based on Formula 1's official points system
+- Add multiple races to calculate season totals
+- View detailed breakdown of points earned per race
+- Modern, responsive UI built with React and SCSS
+- Fully typed with TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Points System
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+The calculator uses the current Formula 1 points system:
+
+| Position | Points |
+|----------|--------|
+| 1st | 25 |
+| 2nd | 18 |
+| 3rd | 15 |
+| 4th | 12 |
+| 5th | 10 |
+| 6th | 8 |
+| 7th | 6 |
+| 8th | 4 |
+| 9th | 2 |
+| 10th | 1 |
+
+*Note: This calculator does not currently factor in fastest lap points or sprint race points.*
+## Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/f1-points-calculator.git
+cd f1-points-calculator
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies
+```bash
+npm install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Start the development server
+```bash
+npm run dev
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## Usage
+
+1. Enter the finishing position (1-20) for each race
+2. Add more races using the "Add Race" button
+3. Remove races using the "Remove" button next to each race input
+4. Click "Calculate Points" to see your total championship points and breakdown
+
+## Technologies Used
+
+- React 19
+- TypeScript
+- Vite
+- SCSS for styling
+- Modern ES6+ JavaScript
+
+## Project Structure
+
+```
+src/
+├── components/           # React components
+│   ├── PointsForm.tsx    # Form for race inputs
+│   ├── PointsResult.tsx  # Results display
+│   └── RaceInput.tsx     # Individual race input
+├── styles/               # SCSS styles
+├── types/                # TypeScript type definitions
+├── utils/                
+│   └── calculatePoints.ts # Points calculation logic
+└── App.tsx               # Main application component
 ```

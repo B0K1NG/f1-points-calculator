@@ -2,9 +2,6 @@
 
 A modern React application for calculating Formula 1 championship points based on race positions.
 
-![F1 Points Calculator](/src/assets/preview-1.png)
-![F1 Points Calculator](/src/assets/preview-2.png)
-
 ## Features
 
 - Calculate total championship points based on Formula 1's official points system

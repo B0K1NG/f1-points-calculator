@@ -1,1 +1,170 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #e10600;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+.f1-calculator {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.points-reference {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.points-reference h3 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.points-reference table {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.points-reference table th, .points-reference table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+.points-reference table th {
+  background-color: #111111;
+}
+
+.points-form {
+  margin-bottom: 30px;
+}
+.points-form h2 {
+  margin-bottom: 20px;
+  color: #1e1e1e;
+  font-size: 20px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+}
+.form-actions button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.form-actions .add-race {
+  background-color: #00a19b;
+  color: #fff;
+}
+.form-actions .add-race:hover {
+  background-color: #006e6a;
+}
+.form-actions .calculate {
+  background-color: #e10600;
+  color: #fff;
+}
+.form-actions .calculate:hover {
+  background-color: #ae0500;
+}
+
+.points-result {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.points-result h3 {
+  margin-bottom: 16px;
+  color: #1e1e1e;
+}
+.points-result .total-points {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e10600;
+  margin-bottom: 20px;
+}
+.points-result .points-breakdown h4 {
+  margin-bottom: 8px;
+}
+.points-result .points-breakdown table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.points-result .points-breakdown table th, .points-result .points-breakdown table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.points-result .points-breakdown table th {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.points-result .points-breakdown table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.races-container {
+  margin-bottom: 20px;
+}
+
+.race-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.race-input label {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 12px;
+}
+.race-input label input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.race-input .remove-race {
+  padding: 6px 10px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.race-input .remove-race:hover {
+  background-color: #050505;
+}/*# sourceMappingURL=main.css.map */

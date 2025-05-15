@@ -20,6 +20,7 @@ export default function RaceInput({ id, value, onChange, onRemove }: RaceInputPr
         <input 
           type="number" 
           min="1"
+          max="20"
           value={value || ''}
           onChange={handleChange}
           placeholder="Position"

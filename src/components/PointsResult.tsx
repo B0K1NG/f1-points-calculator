@@ -12,7 +12,7 @@ export default function PointsResult({result}: PointsResultProps) {
             <h3>Season Results</h3>
             <p className="total-points">Total Points: {result.totalPoints}</p>
 
-            <div className="ponts-breakdown">
+            <div className="points-breakdown">
                 <h4>Breakdown:</h4>
                 <table>
                     <thead>
